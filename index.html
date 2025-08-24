@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOPUP DANA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="topupForm">
+<div class="wrapper">
+  <img src="images/dana.png" alt="contoh">
+  <h2>TOPUP DANA</h2>
+</div>
+
+
+
+<label for="Nomor">Nomor</label>
+<input type="text" id="Nomor" required placeholder="Masukkan Nomor">
+
+<label for="Nama">Nama</label>
+<input type="text" id="Nama" required placeholder="Nama Sesuai Rekening" pattern="[A-Za-z ]+" title="Hanya huruf dan spasi">
+
+<label for="TopUp">Jumlah TopUp</label>
+<input type="text" id="TopUp" required value="Rp 0">
+
+<label for="Pembayaran">Pembayaran</label>
+<select id="Pembayaran" required>
+  <option value="" disabled selected hidden>Pilih Metode Pembayaran</option>
+  <option value="Bayar Langsung">Bayar Langsung</option>
+  <option value="Hutang">Hutang</option>
+</select>
+
+<div id="hutangSection">
+  <label for="jatuhTempo">Tanggal & Jam Jatuh Tempo</label>
+  <input type="datetime-local" id="jatuhTempo">
+</div>
+
+<p>Biaya Admin: <span id="admin">Rp 0</span></p>
+<p>Total: <span id="total">Rp 0</span></p>
+
+<button type="submit">Kirim</button>
+
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

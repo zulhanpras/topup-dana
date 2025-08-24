@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center ;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.3); /* putih agak transparan */
+  backdrop-filter: blur(8px);            /* efek blur di belakang form */
+  -webkit-backdrop-filter: blur(8px);    /* supaya support di Safari */
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Tombol utama */
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #2C64F5, #6C5BFF); /* background gradient DANA */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Hover tetap gradient DANA */
+button:hover {
+  background: linear-gradient(90deg, #1E4ED8, #5A4BFF);
+}
+
+
+p {
+  margin: 8px 0 0 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#hutangSection {
+  display: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 10px;
+    width: 90%;
+  }
+
+  input, select, button {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+
+
+/* Tengahin logo + judul saja */
+.wrapper {
+  display: flex;
+  align-items: center; /* gambar & teks sejajar vertikal */
+  gap: 10px;           /* jarak gambar & teks */
+  justify-content: center; /* tengah horizontal */
+  margin-bottom: 5px; /* jarak ke input form di bawah */
+}
+
+.wrapper img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.wrapper h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Styling form normal */
+#topupForm {
+  max-width: 400px;  /* lebar form */
+  margin: 0 auto;    /* tengah horizontal halaman */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#topupForm input, 
+#topupForm select, 
+#topupForm button {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
